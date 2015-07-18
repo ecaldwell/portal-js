@@ -19,7 +19,7 @@ This project uses [Gulp](http://gulpjs.com/) to translate the javascript to ES5 
 
 
 ```javascript
-require(["portal/portal"], function (portal) {
+require(["portal-js/portal"], function (portal) {
 
       var myPortal = new portal.Portal({
         url: "https://www.arcgis.com/"

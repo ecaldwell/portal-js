@@ -7,7 +7,7 @@ gulp.task("build", function () {
     .pipe(babel({
       modules: "amd"
     }))
-    .pipe(gulp.dest("build/portal"))
+    .pipe(gulp.dest("build/portal-js"))
 });
 
 gulp.task("cleanup", function () {
