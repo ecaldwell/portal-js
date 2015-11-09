@@ -1,0 +1,8 @@
+{
+    'preset': 'airbnb',
+    'disallowMultipleVarDecl': true,
+    'requireCamelCaseOrUpperCaseIdentifiers': 'ignoreProperties',
+    'requireTrailingComma': false,
+    'validateQuoteMarks': {'mark': "'", 'escape': true},
+    'validateIndentation': {'value': 2, 'allExcept': ['comments']}
+}
