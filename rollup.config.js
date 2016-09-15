@@ -1,15 +1,19 @@
-import babel from 'rollup-plugin-babel';
-import npm from 'rollup-plugin-npm';
+import nodeResolve from "rollup-plugin-node-resolve";
+import json from "rollup-plugin-json";
+import babel from "rollup-plugin-babel";
+import uglify from "rollup-plugin-uglify";
 
 export default {
-  entry: 'src/index.js',
-  dest: 'build/portal.js',
-  plugins: [
-    babel(),
-    npm({
-      jsnext: true,
-      main: true
-    })
-  ],
-  format: 'amd'
+    entry: "src/js/portal/portal.js",
+    exports: "named",
+    moduleName: "portal",
+    format: "umd",
+    plugins: [
+        nodeResolve(),
+        json(),
+        babel(),
+        uglify()
+    ],
+    dest: "build/portal.min.js",
+    sourceMap: "src/js/lib/portal.min.js.map"
 };
