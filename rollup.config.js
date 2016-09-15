@@ -4,7 +4,7 @@ import babel from "rollup-plugin-babel";
 import uglify from "rollup-plugin-uglify";
 
 export default {
-    entry: "src/js/portal/portal.js",
+    entry: "src/portal.js",
     exports: "named",
     moduleName: "portal",
     format: "umd",
@@ -15,5 +15,5 @@ export default {
         uglify()
     ],
     dest: "build/portal.min.js",
-    sourceMap: "src/js/lib/portal.min.js.map"
+    sourceMap: "build/portal.min.js.map"
 };
